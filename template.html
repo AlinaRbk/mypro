@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="lt-LT">
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<title>MyPage</title>
+</head>
+
+<!-- meniu -->
+<body>
+	<nav class="meniubar">
+		<a href="./template.html" class="logo">LOGO</a>
+		<nav class="MeniuRight">
+			<a class="active" href="./aboutus.htm">Apie mus</a>
+				<a href="./news.htm">Naujienos</a>
+				<a href="./service.htm">Paslaugos</a>
+				<a href="./contact.htm">Kontaktai</a>
+		</nav>
+	</nav>
+	
+<!-- slideshow -->
+	<section>
+		  <img class="mySlides" src="1.jpg" style="width:30%">
+		  <img class="mySlides" src="2.jpg" style="width:30%">
+		  <img class="mySlides" src="3.jpg" style="width:30%">
+	</section>
+		
+
+<!--content-->
+	
+		<div class="contentmain">
+			<div class="contentleft">
+			<img src="what.jpg" alt="what" width="500px">
+			</div>
+			<div class="contentright">
+				<h3>Tekstas</h3>
+					<p>Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)</p>
+				<h3>Tekstas</h3>
+					<p>Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)</p>
+				<h3>Tekstas</h3>
+					<p>Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)</p>
+				<h3>Tekstas</h3>
+					<p>Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)Dirbam ir šypsomės:)</p>
+					
+			</div>
+			
+	
+		
+		</div>
+
+</body>
+
+<!-- footer -->
+
+<footer>
+	<div class="footerbar">
+		<div class="footerinfo">
+			<div class="footerimg">
+				<img src="C:\Users\oalin\Documents\PHP\images\mob.png" alt="mobile" style="width:70%">
+			</div>
+			<a href="#Tel">862222222</a>
+				<p>Skambinkite....</p>
+		</div>
+		<div class="footerinfo">
+			<div class="footerimg">
+				<img src="C:\Users\oalin\Documents\PHP\images\email.png" alt="mail" style="width:100%">
+			</div>
+			<a href="#mail">info@info.lt</a>
+				<p>....pasirinktas tekstas...</p>
+		</div>
+		<div class="footerinfo">
+			<div class="footerimg">
+				<img src="C:\Users\oalin\Documents\PHP\images\home.png" alt="home" style="width:100%">
+			</div>
+			<a href="#address">Vytauto g. 434, Klaipėda</a>
+				<p>...pasirinktas tekstas...</p>
+		</div>
+	</div>
+</footer>
+<script>
+			// Automatic Slideshow - change image every 3 seconds
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}
+			  x[myIndex-1].style.display = "block";
+			  setTimeout(carousel, 3000);
+			}
+		</script>
+
+</html>
